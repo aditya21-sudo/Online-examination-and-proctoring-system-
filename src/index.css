@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom CSS styles for smooth visual transitions */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glass {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+/* Question Palette Statuses */
+.palette-unvisited {
+  @apply bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700;
+}
+.palette-current {
+  @apply bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 border-2 border-blue-500;
+}
+.palette-answered {
+  @apply bg-emerald-500 text-white border border-emerald-600;
+}
+.palette-review {
+  @apply bg-amber-500 text-white border border-amber-600;
+}
+.palette-review-answered {
+  @apply bg-violet-600 text-white border border-violet-700;
+}
+

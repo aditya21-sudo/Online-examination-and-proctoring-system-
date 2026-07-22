@@ -1,0 +1,11 @@
+{
+  "name": "Remix: AI Powered Online Examination \u0026 Proctoring Platform",
+  "description": "An enterprise-grade online examination platform featuring real-time AI proctoring, multi-role dashboards, strict exam lockdown mode, warning deductions, and live teacher monitoring.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
